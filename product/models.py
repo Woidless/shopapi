@@ -16,6 +16,7 @@ class Product(models.Model):
                                 on_delete=models.SET_NULL,
                                 null=True,)
     image = models.ImageField(upload_to='images')
+    
 
     class Meta:
         ordering = ['title']
